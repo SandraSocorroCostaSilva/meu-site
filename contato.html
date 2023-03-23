@@ -39,11 +39,11 @@
         </div>
 
         <div class="form">
-            <form>
-                <input type="name" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input class="mensagem" type="text" placeholder="Mensagem">
-                <input type="submit" value="Enviar">
+            <form onsubmit="event.preventDefault()">
+                <input id="form-nome" type="name" placeholder="Nome">
+                <input id="form-email"type="email" placeholder="Email">
+                <input id="form-mensagem"class="mensagem" type="text" placeholder="Mensagem">
+                <input id="form-botao" type="submit" value="Enviar" onclick="enviarFormulario()">
             </form>
         </div>            
         </div>
@@ -54,5 +54,7 @@
         <p>DESENVOLVIDO POR SANDRA COSTA</p>
 
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
